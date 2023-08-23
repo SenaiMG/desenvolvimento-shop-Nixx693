@@ -29,6 +29,16 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+DATABASES = {
+    'defaut': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django' ,
+        'USER':'root',
+        'PASSWORD': '',
+        'HOST': 'localhost' ,
+        'PORT': '3306',
+    }
+}
 
 INSTALLED_APPS = [
     'shop',

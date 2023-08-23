@@ -3,8 +3,16 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def index(request):
-    return HttpResponse('<h1>Olá mundo!</h1>')
-
 def pagina(request):
+    return render(request, '<h1>Ola mundo!</h1>')
+
+
+def index(request):
     return render(request, 'index.html')
+
+
+def carrinho(request):
+    return render(request, 'carrinho.html')
+
+def produtos(request):
+    return render(request, 'produtos.html')
